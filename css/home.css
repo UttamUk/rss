@@ -146,6 +146,7 @@ header .navbar .custom-navbar-nav .nav-item .nav-link {
   padding: 0.5rem 1.5rem;
   color: #ffffff;
   font-size: 14px;
+  font-weight: 600;
 }
 
 header .navbar .custom-navbar-nav .nav-item .nav-link:hover {
@@ -164,6 +165,7 @@ header .navbar .nav-btn {
   font-size: 14px;
   background: transparent;
   color: #ffffff;
+  font-weight: 600;
   outline: none;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -330,34 +332,10 @@ header .navbar .nav-btn:hover {
   text-align: center;
 }
 
-@media (max-width: 575.98px) {
-  .home .home-img {
-    text-align: center;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .home .home-img {
-    text-align: center;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .home .home-img {
-    text-align: center;
-  }
-}
-
 .home .home-img img {
-  width: 70%;
+  width: 100%;
   -webkit-animation: ror 15s linear infinite both;
           animation: ror 15s linear infinite both;
-}
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .home .home-img img {
-    width: 90%;
-  }
 }
 
 .choose {
@@ -532,7 +510,8 @@ header .navbar .nav-btn:hover {
 }
 
 .orders .order-box img {
-  width: 70%;
+  max-width: 100%;
+  height: auto;
 }
 
 footer {
