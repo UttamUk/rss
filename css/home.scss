@@ -568,7 +568,7 @@ footer {
     // align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 40px;
+    height: auto;
     margin-bottom: 23px;
     &.form-flex {
         flex-direction: row;
@@ -586,16 +586,17 @@ footer {
                 outline: none;
                 display: block;
                 font-size: 18px;
-                width: 40px;
+                width: 30px;
                 height: 30px;
-                // border-radius: 6px;
+                border-radius: 100px;
                 padding: 0;
-                &:nth-child(1) {
-                    border-radius: 6px 0px 0px 6px;
-                }
-                &:nth-last-child(1) {
-                    border-radius: 0px 6px 6px 0px;
-                }
+                margin: 0px 4px;
+                // &:nth-child(1) {
+                //     border-radius: 6px 0px 0px 6px;
+                // }
+                // &:nth-last-child(1) {
+                //     border-radius: 0px 6px 6px 0px;
+                // }
             }
             input {
                 width: 40px;
@@ -612,25 +613,37 @@ footer {
     }
     label {
         font-size: 11px;
+        font-weight: 600;
         margin-bottom: 2px;
         color: #320dff;
+        margin-left: 20px;
     }
     .form-inp {
         outline: none;
         border: 0px;
-        border-bottom: 1px solid #808080;
+        border: 1px solid #d4d4d4;
+        padding: 0px 20px;
         background-color: transparent;
         width: 100%;
         height: 38px;
         color: #223076;
+        box-shadow: 5px 12px 15px rgba(95, 95, 95, 0.15);
+        border-radius: 25px;
+        font-size: 14px;
+        font-weight: bold;
         &:focus {
-            box-shadow: none;
+            // box-shadow: none;
             outline: none;
             // color: #e01b56;
         }
         &::placeholder {
             font-size: 12px;
+            // font-weight: 100;
+            color: #bec9ff;
         }
+        // option:disabled{
+        //     color: #bec9ff;
+        // }
     }
 }
 

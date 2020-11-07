@@ -73,7 +73,7 @@
                 <div class="col-md-6">
                     <div class="home-content">
                         <h1 class="home-title">
-                            Reservation
+                            Restaurant
                             <hr class="home-hr" />
                         </h1>
 
@@ -88,58 +88,93 @@
     <section class="choose">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-md-7">
+                <div class="col-md-6">
                     <div class="choose-box about1">
                         <h4 class="choose-box-header mb-2">
                             Restaurant
                         </h4>
                         <!-- <hr/> -->
                         <form>
-                            <div class="form-grp">
-                                <label for="">Type Of Reservation <span class="text-danger">*</span></label>
-                                <select name="" class="form-inp">
-                                    <option value="" disabled selected>Select Option</option>
-                                    <option value="">Prepaid reservations</option>
-                                    <option value="">60-days in advance reservations</option>
-                                    <option value="">Conventional reservations</option>
-                                    <option value="">Incentive reservations</option>
-                                </select>
+                            <div class="form-group row m-0 mb-4">
+                                <div class="custom-control custom-radio custom-control-inline col">
+                                    <input type="radio" id="Reservation" name="Reservation"
+                                        class="custom-control-input">
+                                    <label class="custom-control-label" for="Reservation">Meal Reservation</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline col">
+                                    <input type="radio" id="Reservation1" name="Reservation"
+                                        class="custom-control-input">
+                                    <label class="custom-control-label" for="Reservation1">Charge to Room</label>
+                                </div>
                             </div>
+
+                            <h4 class="font-weight-bold">Meal Reservation</h4>
+
                             <div class="form-grp">
-                                <label for="">From Date <span class="text-danger">*</span></label>
+                                <label for="">Guest name <span class="text-danger">*</span></label>
+                                <input type="text" name="" class="form-inp" placeholder="Please enter Guest Name" required />
+                            </div>
+
+                            <div class="form-grp">
+                                <label for="">Guest room number <span class="text-danger">*</span></label>
+                                <input type="number" name="" class="form-inp" placeholder="Please enter Guest room number" required />
+                            </div>
+
+                            <div class="form-grp">
+                                <label for="">Date and time of reservation <span class="text-danger">*</span></label>
                                 <input type="date" name="" class="form-inp" required />
                             </div>
+
+                            <div class="form-grp form-flex">
+                                <label for="">Number of People</label>
+                                <div class="add-count">
+                                    <button type="button" class="btn btn-danger">-</button>
+                                    <input type="number" name="" class="form-inp" min="0" step="1" value="1" required />
+                                    <button type="button" class="btn btn-danger">+</button>
+                                </div>
+                            </div>
+                            <div class="form-grp" style="height: auto;">
+                                <label for="">Any special requests <span class="text-danger">*</span></label>
+                                <textarea name="" class="form-inp" rows="3" style="height: auto !important;border: 1px solid grey;" placeholder="Please enter Any special requests"></textarea>
+                            </div>
+
+                            <h4 class="font-weight-bold">Charge To Room</h4>
+
                             <div class="form-grp">
-                                <label for="">To Date <span class="text-danger">*</span></label>
-                                <input type="date" name="" class="form-inp" required />
+                                <label for="">Guest name <span class="text-danger">*</span></label>
+                                <input type="text" name="" class="form-inp" placeholder="Please enter Guest Name" required />
                             </div>
+
+                            <div class="form-grp">
+                                <label for="">Guest room number <span class="text-danger">*</span></label>
+                                <input type="number" name="" class="form-inp" placeholder="Please enter Guest room number" required />
+                            </div>
+                            
+                            <div class="form-grp">
+                                <label for="">Server name <span class="text-danger">*</span></label>
+                                <input type="text" name="" class="form-inp" placeholder="Please enter Guest Name" required />
+                            </div>
+
                             <div class="form-grp form-flex">
-                                <label for="">No of Rooms</label>
+                                <label for="">Number of people at the meal</label>
                                 <div class="add-count">
                                     <button type="button" class="btn btn-danger">-</button>
-                                    <input type="number" name="" class="form-inp" min="0" step="1"
-                                        value="1" required />
+                                    <input type="number" name="" class="form-inp p-0" min="0" step="1" value="1" required />
                                     <button type="button" class="btn btn-danger">+</button>
                                 </div>
                             </div>
-                            <div class="form-grp form-flex">
-                                <label for="">No of Adults</label>
-                                <div class="add-count">
-                                    <button type="button" class="btn btn-danger">-</button>
-                                    <input type="number" name="" class="form-inp" min="0" step="1"
-                                        value="1" required />
-                                    <button type="button" class="btn btn-danger">+</button>
-                                </div>
+
+                            <div class="form-grp">
+                                <label for="">Tip provided to the server</label>
+                                <input type="number" name="" class="form-inp" placeholder="Please enter Tip provided to the server" required />
                             </div>
-                            <div class="form-grp form-flex">
-                                <label for="">No of childs</label>
-                                <div class="add-count">
-                                    <button type="button" class="btn btn-danger">-</button>
-                                    <input type="number" name="" class="form-inp" min="0" step="1"
-                                        value="1" required />
-                                    <button type="button" class="btn btn-danger">+</button>
-                                </div>
+
+
+                            <div class="form-grp">
+                                <label for="">Bill total <span class="text-danger">*</span></label>
+                                <input type="number" name="" class="form-inp" placeholder="Please enter Tip provided to the server" required />
                             </div>
+
                             <div class="text-center">
                                 <button type="reset" class="contact-btn bg-danger mr-2">Clear</button>
                                 <button type="submit" class="contact-btn">Submit</button>
@@ -153,16 +188,16 @@
                         <h4 class="choose-box-header">
                             Ads
                         </h4>
-                        <img src="images/ho1.jpg" alt="no image" class="img-thumbnail mb-3"/>
-                        <img src="images/ho2.jpg" alt="no image" class="img-thumbnail mb-3"/>
-                        <img src="images/ho3.jpg" alt="no image" class="img-thumbnail mb-3"/>
+                        <img src="images/ho1.jpg" alt="no image" class="img-thumbnail mb-3" />
+                        <img src="images/ho2.jpg" alt="no image" class="img-thumbnail mb-3" />
+                        <img src="images/ho3.jpg" alt="no image" class="img-thumbnail mb-3" />
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
- 
+
     <footer>
         <div class="container">
             <div class="row">
@@ -333,8 +368,8 @@
                         Reset password
                     </h5>
                     <p class="small text-muted text-center mb-0">
-                        <span class="text-danger">*</span> please enter your email id to reset your password. 
-                        <br/>
+                        <span class="text-danger">*</span> please enter your email id to reset your password.
+                        <br />
                         you will receive an email with instructions on how to reset your password.
                     </p>
                 </div>
@@ -355,13 +390,13 @@
                                 <p class="modal-footer-text">
                                     <a href="">Sign In</a>
                                 </p>
-                                </div>
-                                <div class="col-md">
-                                    <p class="modal-footer-text text-right">
-                                    New to Resort Reservation System..? <a href=""> Sign Up</a>.
-                                    </p>
-                                </div>
                             </div>
+                            <div class="col-md">
+                                <p class="modal-footer-text text-right">
+                                    New to Resort Reservation System..? <a href=""> Sign Up</a>.
+                                </p>
+                            </div>
+                        </div>
 
                     </form>
                 </div>

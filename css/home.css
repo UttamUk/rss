@@ -663,7 +663,7 @@ footer .social-media .social-links {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  height: 40px;
+  height: auto;
   margin-bottom: 23px;
 }
 
@@ -702,17 +702,11 @@ footer .social-media .social-links {
   outline: none;
   display: block;
   font-size: 18px;
-  width: 40px;
+  width: 30px;
   height: 30px;
+  border-radius: 100px;
   padding: 0;
-}
-
-.form-grp.form-flex .add-count .btn:nth-child(1) {
-  border-radius: 6px 0px 0px 6px;
-}
-
-.form-grp.form-flex .add-count .btn:nth-last-child(1) {
-  border-radius: 0px 6px 6px 0px;
+  margin: 0px 4px;
 }
 
 .form-grp.form-flex .add-count input {
@@ -730,40 +724,50 @@ footer .social-media .social-links {
 
 .form-grp label {
   font-size: 11px;
+  font-weight: 600;
   margin-bottom: 2px;
   color: #320dff;
+  margin-left: 20px;
 }
 
 .form-grp .form-inp {
   outline: none;
   border: 0px;
-  border-bottom: 1px solid #808080;
+  border: 1px solid #d4d4d4;
+  padding: 0px 20px;
   background-color: transparent;
   width: 100%;
   height: 38px;
   color: #223076;
+  -webkit-box-shadow: 5px 12px 15px rgba(95, 95, 95, 0.15);
+          box-shadow: 5px 12px 15px rgba(95, 95, 95, 0.15);
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .form-grp .form-inp:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
   outline: none;
 }
 
 .form-grp .form-inp::-webkit-input-placeholder {
   font-size: 12px;
+  color: #bec9ff;
 }
 
 .form-grp .form-inp:-ms-input-placeholder {
   font-size: 12px;
+  color: #bec9ff;
 }
 
 .form-grp .form-inp::-ms-input-placeholder {
   font-size: 12px;
+  color: #bec9ff;
 }
 
 .form-grp .form-inp::placeholder {
   font-size: 12px;
+  color: #bec9ff;
 }
 
 .contact-btn {
